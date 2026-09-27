@@ -107,8 +107,7 @@
     color:rgb(226, 88, 72);
     
 }
-/* Paste this at the very bottom of your CSS script */
-#site-background-video {
+
   position: fixed;
   top: 50%;
   left: 50%;
@@ -116,10 +115,10 @@
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -9999; /* Forces the video to the absolute furthest background layer */
+  z-index: -1; 
   transform: translate(-50%, -50%);
   object-fit: cover;
-  pointer-events: none; /* Allows users to still click items through the video */
+  pointer-events: none; 
 }
 
 #site-video-overlay {
@@ -128,8 +127,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Darkens the video slightly so your original text stays readable */
-  z-index: -9998; /* Sits exactly on top of the video, but behind your content */
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: -9998;
   pointer-events: none;
 }
 
