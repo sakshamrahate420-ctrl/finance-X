@@ -138,3 +138,53 @@
     position: relative;
     z-index: 1;
 }
+@media (max-width: 600px) {
+
+    /* General */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Background video */
+    #site-background-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    /* Navbar */
+    .navbar {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    /* Main content */
+    .quote,
+    .quote1 {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    /* Charts / boxes */
+    .chart,
+    .chart-box-wrapper {
+        width: 90%;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Inputs and buttons */
+    input,
+    button {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
